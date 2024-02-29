@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Outfit {
   final String docId;
@@ -6,6 +7,7 @@ class Outfit {
   final Map top;
   final Map bottom;
   final Map shoes;
+  final String userId;
 
   Outfit({
     required this.docId,
@@ -13,6 +15,7 @@ class Outfit {
     required this.top,
     required this.bottom,
     required this.shoes,
+    required this.userId,
   });
 
   factory Outfit.fromFirestore(DocumentSnapshot<Map<String, dynamic>> doc) {
@@ -23,6 +26,7 @@ class Outfit {
       top: data['top'],
       bottom: data['bottom'],
       shoes: data['shoes'],
+      userId: data['userId'],
     );
   }
 
@@ -33,6 +37,7 @@ class Outfit {
       "top": top,
       "bottom": bottom,
       "shoes": shoes,
+      "userId": userId,
     };
   }
 }

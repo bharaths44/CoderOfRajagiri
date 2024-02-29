@@ -30,6 +30,7 @@ class AllProductsController extends GetxController {
   Future<RxList<Product>> getProducts() async {
     try {
       isLoading.value = true;
+      products.clear();
       await db
           .collection('product')
           .where('userId', isEqualTo: userId)

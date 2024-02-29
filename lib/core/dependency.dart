@@ -1,3 +1,4 @@
+import 'package:cor/src/new_outfit/outfit_controller.dart';
 import 'package:cor/src/view_outfits/view_outfits_controller.dart';
 import 'package:get/get.dart';
 
@@ -35,6 +36,13 @@ class ViewOutfitControllerBinding extends Bindings {
   }
 }
 
+class WardrobeControllerBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut<WardrobeController>(() => WardrobeController());
+  }
+}
+
 class LoginControllerBinding extends Bindings {
   @override
   void dependencies() {
@@ -49,5 +57,6 @@ class DependencyCreator {
     LoginControllerBinding().dependencies();
     AllProductsControllerBinding().dependencies();
     ViewOutfitControllerBinding().dependencies();
+    WardrobeControllerBinding().dependencies();
   }
 }

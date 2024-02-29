@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'view_outfits_controller.dart';
 
 class ViewOutfitScreen extends StatelessWidget {
-  final ViewOutfitController controller = Get.put(ViewOutfitController());
+  final ViewOutfitController controller = Get.find<ViewOutfitController>();
 
   ViewOutfitScreen({super.key});
 

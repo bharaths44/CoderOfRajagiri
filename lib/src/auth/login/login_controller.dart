@@ -25,7 +25,7 @@ class LoginController extends GetxController {
   void executeOnInitLogic() {
     controller.getCurrentUserId();
     controller.onInit();
-    viewOutfitController.fetchOutfits();
+    viewOutfitController.onInit();
     wardrobeController.onInit();
   }
 

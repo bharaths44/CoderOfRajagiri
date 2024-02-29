@@ -6,7 +6,7 @@ import 'all_product_controller.dart';
 
 class AllProductScreen extends StatelessWidget {
   final AllProductsController allProductsController =
-      Get.put<AllProductsController>(AllProductsController());
+      Get.find<AllProductsController>();
 
   AllProductScreen({super.key});
 

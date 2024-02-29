@@ -1,19 +1,20 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 // import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 import '../../core/model/outfit_model.dart';
 
 class ViewOutfitController extends GetxController {
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final FirebaseFirestore db = FirebaseFirestore.instance;
   // final firebase_storage.FirebaseStorage _storage =
   //     firebase_storage.FirebaseStorage.instance;
   RxList<Outfit> outfits = RxList<Outfit>();
-
+  String userId = '';
   @override
   void onInit() {
-    outfits.bindStream(
-        fetchOutfits()); // fetch outfits when the controller is initialized
+    userId = getCurrentUserId();
+    fetchOutfits();
     super.onInit();
   }
 
@@ -22,13 +23,31 @@ class ViewOutfitController extends GetxController {
     update();
   }
 
-  Stream<List<Outfit>> fetchOutfits() {
-    return _firestore.collection('outfits').snapshots().map(
-        (query) => query.docs.map((doc) => Outfit.fromFirestore(doc)).toList());
+  String getCurrentUserId() {
+    final User? user = FirebaseAuth.instance.currentUser;
+    return user?.uid ?? '';
+  }
+
+  Future<void> fetchOutfits() async {
+    try {
+      final snapshot = await db
+          .collection('outfits')
+          .where('userId', isEqualTo: userId)
+          .get();
+
+      outfits.clear();
+      for (var doc in snapshot.docs) {
+        outfits.add(Outfit.fromFirestore(doc));
+      }
+
+      print('Outfits :$outfits');
+    } catch (e) {
+      print('Error fetching outfits: $e');
+    }
   }
 
   Future<void> removeOutfit(String outfitId) async {
-    await _firestore.collection('outfits').doc(outfitId).delete();
+    await db.collection('outfits').doc(outfitId).delete();
   }
 
   Future<String> fetchTopImage(Outfit outfit) async {
