@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "27266856527",
+    "project_id": "coder-of-rajagiri-4444",
+    "storage_bucket": "coder-of-rajagiri-4444.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27266856527:android:762d43bd329d5e53b39c3a",
+        "android_client_info": {
+          "package_name": "com.example.cor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcQmVeTY_rw9BFsbtTJF1Bmsl0NNx_4jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

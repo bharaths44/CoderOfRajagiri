@@ -1,0 +1,25 @@
+# This is a generated file; do not edit or check into version control.
+cloud_firestore=/Users/bharaths/.pub-cache/hosted/pub.dev/cloud_firestore-4.15.6/
+cloud_firestore_web=/Users/bharaths/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.10.6/
+file_selector_linux=/Users/bharaths/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.2+1/
+file_selector_macos=/Users/bharaths/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.3+3/
+file_selector_windows=/Users/bharaths/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+1/
+firebase_auth=/Users/bharaths/.pub-cache/hosted/pub.dev/firebase_auth-4.17.5/
+firebase_auth_web=/Users/bharaths/.pub-cache/hosted/pub.dev/firebase_auth_web-5.9.5/
+firebase_core=/Users/bharaths/.pub-cache/hosted/pub.dev/firebase_core-2.25.5/
+firebase_core_web=/Users/bharaths/.pub-cache/hosted/pub.dev/firebase_core_web-2.11.5/
+firebase_storage=/Users/bharaths/.pub-cache/hosted/pub.dev/firebase_storage-11.6.6/
+firebase_storage_web=/Users/bharaths/.pub-cache/hosted/pub.dev/firebase_storage_web-3.7.0/
+flutter_plugin_android_lifecycle=/Users/bharaths/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.17/
+image_picker=/Users/bharaths/.pub-cache/hosted/pub.dev/image_picker-1.0.7/
+image_picker_android=/Users/bharaths/.pub-cache/hosted/pub.dev/image_picker_android-0.8.9+3/
+image_picker_for_web=/Users/bharaths/.pub-cache/hosted/pub.dev/image_picker_for_web-3.0.2/
+image_picker_ios=/Users/bharaths/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.9+1/
+image_picker_linux=/Users/bharaths/.pub-cache/hosted/pub.dev/image_picker_linux-0.2.1+1/
+image_picker_macos=/Users/bharaths/.pub-cache/hosted/pub.dev/image_picker_macos-0.2.1+1/
+image_picker_windows=/Users/bharaths/.pub-cache/hosted/pub.dev/image_picker_windows-0.2.1+1/
+path_provider=/Users/bharaths/.pub-cache/hosted/pub.dev/path_provider-2.1.2/
+path_provider_android=/Users/bharaths/.pub-cache/hosted/pub.dev/path_provider_android-2.2.2/
+path_provider_foundation=/Users/bharaths/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.2/
+path_provider_linux=/Users/bharaths/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+path_provider_windows=/Users/bharaths/.pub-cache/hosted/pub.dev/path_provider_windows-2.2.1/
